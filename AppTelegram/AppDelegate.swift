@@ -2,17 +2,17 @@
 //  AppDelegate.swift
 //  AppTelegram
 //
-//  Created by hellen.heiny.f.santi on 21/08/23.
+//  Created by hellen.heiny.f.santi on 06/04/23.
 //
 
 import UIKit
 
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //FirebaseApp.configure()
         // Override point for customization after application launch.
         return true
     }
