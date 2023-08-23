@@ -7,26 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3DB82962A9451B600CFE427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82952A9451B600CFE427 /* AppDelegate.swift */; };
-		F3DB82982A9451B600CFE427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82972A9451B600CFE427 /* SceneDelegate.swift */; };
-		F3DB829A2A9451B600CFE427 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82992A9451B600CFE427 /* ViewController.swift */; };
-		F3DB829D2A9451B600CFE427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DB829B2A9451B600CFE427 /* Main.storyboard */; };
-		F3DB829F2A9451B700CFE427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DB829E2A9451B700CFE427 /* Assets.xcassets */; };
-		F3DB82A22A9451B700CFE427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82A02A9451B700CFE427 /* LaunchScreen.storyboard */; };
-		F3DB82AD2A9451B700CFE427 /* AppTelegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82AC2A9451B700CFE427 /* AppTelegramTests.swift */; };
-		F3DB82B72A9451B700CFE427 /* AppTelegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82B62A9451B700CFE427 /* AppTelegramUITests.swift */; };
-		F3DB82B92A9451B700CFE427 /* AppTelegramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82B82A9451B700CFE427 /* AppTelegramUITestsLaunchTests.swift */; };
+		F31DD0DD2A95923500ED9C2D /* RegisterViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396681F2A95724200C9CE0A /* RegisterViewTestCase.swift */; };
+		F31DD0DE2A95923B00ED9C2D /* LoginViewTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396681D2A95723900C9CE0A /* LoginViewTestCase.swift */; };
+		F31DD0E02A95956400ED9C2D /* ContactListTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31DD0DF2A95956400ED9C2D /* ContactListTestCase.swift */; };
+		F39668252A95755200C9CE0A /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F39668242A95755200C9CE0A /* SnapshotTesting */; };
+		F39668282A95757100C9CE0A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F39668272A95757100C9CE0A /* SnapKit */; };
+		F39668442A958EB300C9CE0A /* LoginViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F396681A2A95722F00C9CE0A /* LoginViewSpy.swift */; };
+		F39668452A958FC700C9CE0A /* RegisterViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39668192A95722F00C9CE0A /* RegisterViewSpy.swift */; };
+		F3DB82D02A94526800CFE427 /* ContactListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82CA2A94526800CFE427 /* ContactListDataSource.swift */; };
+		F3DB82D12A94526800CFE427 /* ContactListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82CC2A94526800CFE427 /* ContactListCollectionViewCell.swift */; };
+		F3DB82D22A94526800CFE427 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82CD2A94526800CFE427 /* ContactListView.swift */; };
+		F3DB82D32A94526800CFE427 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82CE2A94526800CFE427 /* LoginView.swift */; };
+		F3DB82D42A94526800CFE427 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82CF2A94526800CFE427 /* RegisterView.swift */; };
+		F3DB82D92A94527100CFE427 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82D62A94527100CFE427 /* ContactListViewController.swift */; };
+		F3DB82DA2A94527100CFE427 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82D72A94527100CFE427 /* LoginViewController.swift */; };
+		F3DB82DB2A94527100CFE427 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82D82A94527100CFE427 /* RegisterViewController.swift */; };
+		F3DB82DD2A9452E000CFE427 /* DataUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82DC2A9452E000CFE427 /* DataUserModel.swift */; };
+		F3DB82E42A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181657.svg in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82DF2A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181657.svg */; };
+		F3DB82E52A9452F900CFE427 /* usuario.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82E02A9452F900CFE427 /* usuario.png */; };
+		F3DB82E62A9452F900CFE427 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82E12A9452F900CFE427 /* logo.png */; };
+		F3DB82E72A9452F900CFE427 /* mask_girl_protection_coronavirus_icon_142132.svg in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82E22A9452F900CFE427 /* mask_girl_protection_coronavirus_icon_142132.svg */; };
+		F3DB82E82A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181661.svg in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82E32A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181661.svg */; };
+		F3DB82EB2A94530100CFE427 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82EA2A94530100CFE427 /* Users.json */; };
+		F3DB82ED2A94530B00CFE427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82EC2A94530B00CFE427 /* AppDelegate.swift */; };
+		F3DB82EF2A94531300CFE427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82EE2A94531300CFE427 /* SceneDelegate.swift */; };
+		F3DB82F12A94531A00CFE427 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB82F02A94531A00CFE427 /* ViewConfiguration.swift */; };
+		F3DB82F32A94532400CFE427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82F22A94532400CFE427 /* Assets.xcassets */; };
+		F3DB82F72A9453BA00CFE427 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3DB82F62A9453BA00CFE427 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F3DB82A92A9451B700CFE427 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3DB828A2A9451B600CFE427 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3DB82912A9451B600CFE427;
-			remoteInfo = AppTelegram;
-		};
-		F3DB82B32A9451B700CFE427 /* PBXContainerItemProxy */ = {
+		F39668352A958AA200C9CE0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3DB828A2A9451B600CFE427 /* Project object */;
 			proxyType = 1;
@@ -36,52 +47,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F31DD0DF2A95956400ED9C2D /* ContactListTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTestCase.swift; sourceTree = "<group>"; };
+		F39668192A95722F00C9CE0A /* RegisterViewSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewSpy.swift; sourceTree = "<group>"; };
+		F396681A2A95722F00C9CE0A /* LoginViewSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewSpy.swift; sourceTree = "<group>"; };
+		F396681D2A95723900C9CE0A /* LoginViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewTestCase.swift; sourceTree = "<group>"; };
+		F396681F2A95724200C9CE0A /* RegisterViewTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewTestCase.swift; sourceTree = "<group>"; };
+		F39668312A958AA200C9CE0A /* AppTelegramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTelegramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DB82922A9451B600CFE427 /* AppTelegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTelegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3DB82952A9451B600CFE427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3DB82972A9451B600CFE427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3DB82992A9451B600CFE427 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3DB829C2A9451B600CFE427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F3DB829E2A9451B700CFE427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3DB82A12A9451B700CFE427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F3DB82A32A9451B700CFE427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3DB82A82A9451B700CFE427 /* AppTelegramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTelegramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3DB82AC2A9451B700CFE427 /* AppTelegramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTelegramTests.swift; sourceTree = "<group>"; };
-		F3DB82B22A9451B700CFE427 /* AppTelegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTelegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3DB82B62A9451B700CFE427 /* AppTelegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTelegramUITests.swift; sourceTree = "<group>"; };
-		F3DB82B82A9451B700CFE427 /* AppTelegramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTelegramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3DB82CA2A94526800CFE427 /* ContactListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListDataSource.swift; sourceTree = "<group>"; };
+		F3DB82CC2A94526800CFE427 /* ContactListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListCollectionViewCell.swift; sourceTree = "<group>"; };
+		F3DB82CD2A94526800CFE427 /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		F3DB82CE2A94526800CFE427 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F3DB82CF2A94526800CFE427 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F3DB82D62A94527100CFE427 /* ContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		F3DB82D72A94527100CFE427 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3DB82D82A94527100CFE427 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F3DB82DC2A9452E000CFE427 /* DataUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUserModel.swift; sourceTree = "<group>"; };
+		F3DB82DF2A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181657.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = avatar_face_man_boy_male_profile_smiley_happy_people_icon_181657.svg; sourceTree = "<group>"; };
+		F3DB82E02A9452F900CFE427 /* usuario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usuario.png; sourceTree = "<group>"; };
+		F3DB82E12A9452F900CFE427 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F3DB82E22A9452F900CFE427 /* mask_girl_protection_coronavirus_icon_142132.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mask_girl_protection_coronavirus_icon_142132.svg; sourceTree = "<group>"; };
+		F3DB82E32A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181661.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = avatar_face_man_boy_male_profile_smiley_happy_people_icon_181661.svg; sourceTree = "<group>"; };
+		F3DB82EA2A94530100CFE427 /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		F3DB82EC2A94530B00CFE427 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3DB82EE2A94531300CFE427 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3DB82F02A94531A00CFE427 /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		F3DB82F22A94532400CFE427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3DB82F42A94532A00CFE427 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DB82F62A9453BA00CFE427 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F396682E2A958AA200C9CE0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3DB828F2A9451B600CFE427 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3DB82A52A9451B700CFE427 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3DB82AF2A9451B700CFE427 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F39668252A95755200C9CE0A /* SnapshotTesting in Frameworks */,
+				F39668282A95757100C9CE0A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F39668102A9571DD00C9CE0A /* AppTelegramTests */ = {
+			isa = PBXGroup;
+			children = (
+				F396681D2A95723900C9CE0A /* LoginViewTestCase.swift */,
+				F31DD0DF2A95956400ED9C2D /* ContactListTestCase.swift */,
+				F396681F2A95724200C9CE0A /* RegisterViewTestCase.swift */,
+				F39668182A95722F00C9CE0A /* Doubles */,
+			);
+			path = AppTelegramTests;
+			sourceTree = "<group>";
+		};
+		F39668182A95722F00C9CE0A /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				F39668192A95722F00C9CE0A /* RegisterViewSpy.swift */,
+				F396681A2A95722F00C9CE0A /* LoginViewSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
 		F3DB82892A9451B600CFE427 = {
 			isa = PBXGroup;
 			children = (
 				F3DB82942A9451B600CFE427 /* AppTelegram */,
-				F3DB82AB2A9451B700CFE427 /* AppTelegramTests */,
-				F3DB82B52A9451B700CFE427 /* AppTelegramUITests */,
+				F39668102A9571DD00C9CE0A /* AppTelegramTests */,
 				F3DB82932A9451B600CFE427 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				F3DB82922A9451B600CFE427 /* AppTelegram.app */,
-				F3DB82A82A9451B700CFE427 /* AppTelegramTests.xctest */,
-				F3DB82B22A9451B700CFE427 /* AppTelegramUITests.xctest */,
+				F39668312A958AA200C9CE0A /* AppTelegramTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,37 +138,108 @@
 		F3DB82942A9451B600CFE427 /* AppTelegram */ = {
 			isa = PBXGroup;
 			children = (
-				F3DB82952A9451B600CFE427 /* AppDelegate.swift */,
-				F3DB82972A9451B600CFE427 /* SceneDelegate.swift */,
-				F3DB82992A9451B600CFE427 /* ViewController.swift */,
-				F3DB829B2A9451B600CFE427 /* Main.storyboard */,
-				F3DB829E2A9451B700CFE427 /* Assets.xcassets */,
-				F3DB82A02A9451B700CFE427 /* LaunchScreen.storyboard */,
-				F3DB82A32A9451B700CFE427 /* Info.plist */,
+				F3DB82C52A94525F00CFE427 /* Model  */,
+				F3DB82C82A94526800CFE427 /* View */,
+				F3DB82D52A94527100CFE427 /* Controller */,
+				F3DB82F02A94531A00CFE427 /* ViewConfiguration.swift */,
+				F3DB82EE2A94531300CFE427 /* SceneDelegate.swift */,
+				F3DB82EC2A94530B00CFE427 /* AppDelegate.swift */,
+				F3DB82DE2A9452F900CFE427 /* Assets */,
+				F3DB82E92A94530100CFE427 /* Json Files */,
+				F3DB82F42A94532A00CFE427 /* Info.plist */,
+				F3DB82F22A94532400CFE427 /* Assets.xcassets */,
+				F3DB82F62A9453BA00CFE427 /* GoogleService-Info.plist */,
 			);
 			path = AppTelegram;
 			sourceTree = "<group>";
 		};
-		F3DB82AB2A9451B700CFE427 /* AppTelegramTests */ = {
+		F3DB82C52A94525F00CFE427 /* Model  */ = {
 			isa = PBXGroup;
 			children = (
-				F3DB82AC2A9451B700CFE427 /* AppTelegramTests.swift */,
+				F3DB82DC2A9452E000CFE427 /* DataUserModel.swift */,
 			);
-			path = AppTelegramTests;
+			path = "Model ";
 			sourceTree = "<group>";
 		};
-		F3DB82B52A9451B700CFE427 /* AppTelegramUITests */ = {
+		F3DB82C82A94526800CFE427 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3DB82B62A9451B700CFE427 /* AppTelegramUITests.swift */,
-				F3DB82B82A9451B700CFE427 /* AppTelegramUITestsLaunchTests.swift */,
+				F3DB82C92A94526800CFE427 /* DataSource */,
+				F3DB82CB2A94526800CFE427 /* Cells */,
+				F3DB82CD2A94526800CFE427 /* ContactListView.swift */,
+				F3DB82CE2A94526800CFE427 /* LoginView.swift */,
+				F3DB82CF2A94526800CFE427 /* RegisterView.swift */,
 			);
-			path = AppTelegramUITests;
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3DB82C92A94526800CFE427 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB82CA2A94526800CFE427 /* ContactListDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		F3DB82CB2A94526800CFE427 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB82CC2A94526800CFE427 /* ContactListCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F3DB82D52A94527100CFE427 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB82D62A94527100CFE427 /* ContactListViewController.swift */,
+				F3DB82D72A94527100CFE427 /* LoginViewController.swift */,
+				F3DB82D82A94527100CFE427 /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3DB82DE2A9452F900CFE427 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB82DF2A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181657.svg */,
+				F3DB82E02A9452F900CFE427 /* usuario.png */,
+				F3DB82E12A9452F900CFE427 /* logo.png */,
+				F3DB82E22A9452F900CFE427 /* mask_girl_protection_coronavirus_icon_142132.svg */,
+				F3DB82E32A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181661.svg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F3DB82E92A94530100CFE427 /* Json Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3DB82EA2A94530100CFE427 /* Users.json */,
+			);
+			path = "Json Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F39668302A958AA200C9CE0A /* AppTelegramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39668372A958AA200C9CE0A /* Build configuration list for PBXNativeTarget "AppTelegramTests" */;
+			buildPhases = (
+				F396682D2A958AA200C9CE0A /* Sources */,
+				F396682E2A958AA200C9CE0A /* Frameworks */,
+				F396682F2A958AA200C9CE0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F39668362A958AA200C9CE0A /* PBXTargetDependency */,
+			);
+			name = AppTelegramTests;
+			productName = AppTelegramTests;
+			productReference = F39668312A958AA200C9CE0A /* AppTelegramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F3DB82912A9451B600CFE427 /* AppTelegram */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3DB82BC2A9451B700CFE427 /* Build configuration list for PBXNativeTarget "AppTelegram" */;
@@ -143,45 +253,13 @@
 			dependencies = (
 			);
 			name = AppTelegram;
+			packageProductDependencies = (
+				F39668242A95755200C9CE0A /* SnapshotTesting */,
+				F39668272A95757100C9CE0A /* SnapKit */,
+			);
 			productName = AppTelegram;
 			productReference = F3DB82922A9451B600CFE427 /* AppTelegram.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F3DB82A72A9451B700CFE427 /* AppTelegramTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3DB82BF2A9451B700CFE427 /* Build configuration list for PBXNativeTarget "AppTelegramTests" */;
-			buildPhases = (
-				F3DB82A42A9451B700CFE427 /* Sources */,
-				F3DB82A52A9451B700CFE427 /* Frameworks */,
-				F3DB82A62A9451B700CFE427 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3DB82AA2A9451B700CFE427 /* PBXTargetDependency */,
-			);
-			name = AppTelegramTests;
-			productName = AppTelegramTests;
-			productReference = F3DB82A82A9451B700CFE427 /* AppTelegramTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F3DB82B12A9451B700CFE427 /* AppTelegramUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3DB82C22A9451B700CFE427 /* Build configuration list for PBXNativeTarget "AppTelegramUITests" */;
-			buildPhases = (
-				F3DB82AE2A9451B700CFE427 /* Sources */,
-				F3DB82AF2A9451B700CFE427 /* Frameworks */,
-				F3DB82B02A9451B700CFE427 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3DB82B42A9451B700CFE427 /* PBXTargetDependency */,
-			);
-			name = AppTelegramUITests;
-			productName = AppTelegramUITests;
-			productReference = F3DB82B22A9451B700CFE427 /* AppTelegramUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,16 +271,12 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					F39668302A958AA200C9CE0A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F3DB82912A9451B600CFE427;
+					};
 					F3DB82912A9451B600CFE427 = {
 						CreatedOnToolsVersion = 14.3.1;
-					};
-					F3DB82A72A9451B700CFE427 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = F3DB82912A9451B600CFE427;
-					};
-					F3DB82B12A9451B700CFE427 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = F3DB82912A9451B600CFE427;
 					};
 				};
 			};
@@ -215,107 +289,124 @@
 				Base,
 			);
 			mainGroup = F3DB82892A9451B600CFE427;
+			packageReferences = (
+				F39668232A95755200C9CE0A /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				F39668262A95757100C9CE0A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F3DB82932A9451B600CFE427 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F3DB82912A9451B600CFE427 /* AppTelegram */,
-				F3DB82A72A9451B700CFE427 /* AppTelegramTests */,
-				F3DB82B12A9451B700CFE427 /* AppTelegramUITests */,
+				F39668302A958AA200C9CE0A /* AppTelegramTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F396682F2A958AA200C9CE0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3DB82902A9451B600CFE427 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3DB82A22A9451B700CFE427 /* LaunchScreen.storyboard in Resources */,
-				F3DB829F2A9451B700CFE427 /* Assets.xcassets in Resources */,
-				F3DB829D2A9451B600CFE427 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3DB82A62A9451B700CFE427 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3DB82B02A9451B700CFE427 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F3DB82EB2A94530100CFE427 /* Users.json in Resources */,
+				F3DB82F72A9453BA00CFE427 /* GoogleService-Info.plist in Resources */,
+				F3DB82E52A9452F900CFE427 /* usuario.png in Resources */,
+				F3DB82E42A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181657.svg in Resources */,
+				F3DB82E62A9452F900CFE427 /* logo.png in Resources */,
+				F3DB82F32A94532400CFE427 /* Assets.xcassets in Resources */,
+				F3DB82E82A9452F900CFE427 /* avatar_face_man_boy_male_profile_smiley_happy_people_icon_181661.svg in Resources */,
+				F3DB82E72A9452F900CFE427 /* mask_girl_protection_coronavirus_icon_142132.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F396682D2A958AA200C9CE0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31DD0E02A95956400ED9C2D /* ContactListTestCase.swift in Sources */,
+				F31DD0DE2A95923B00ED9C2D /* LoginViewTestCase.swift in Sources */,
+				F31DD0DD2A95923500ED9C2D /* RegisterViewTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3DB828E2A9451B600CFE427 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3DB829A2A9451B600CFE427 /* ViewController.swift in Sources */,
-				F3DB82962A9451B600CFE427 /* AppDelegate.swift in Sources */,
-				F3DB82982A9451B600CFE427 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3DB82A42A9451B700CFE427 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3DB82AD2A9451B700CFE427 /* AppTelegramTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3DB82AE2A9451B700CFE427 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3DB82B72A9451B700CFE427 /* AppTelegramUITests.swift in Sources */,
-				F3DB82B92A9451B700CFE427 /* AppTelegramUITestsLaunchTests.swift in Sources */,
+				F3DB82DB2A94527100CFE427 /* RegisterViewController.swift in Sources */,
+				F3DB82D12A94526800CFE427 /* ContactListCollectionViewCell.swift in Sources */,
+				F3DB82DD2A9452E000CFE427 /* DataUserModel.swift in Sources */,
+				F3DB82D02A94526800CFE427 /* ContactListDataSource.swift in Sources */,
+				F3DB82D42A94526800CFE427 /* RegisterView.swift in Sources */,
+				F3DB82DA2A94527100CFE427 /* LoginViewController.swift in Sources */,
+				F3DB82D32A94526800CFE427 /* LoginView.swift in Sources */,
+				F3DB82EF2A94531300CFE427 /* SceneDelegate.swift in Sources */,
+				F39668452A958FC700C9CE0A /* RegisterViewSpy.swift in Sources */,
+				F39668442A958EB300C9CE0A /* LoginViewSpy.swift in Sources */,
+				F3DB82D92A94527100CFE427 /* ContactListViewController.swift in Sources */,
+				F3DB82F12A94531A00CFE427 /* ViewConfiguration.swift in Sources */,
+				F3DB82ED2A94530B00CFE427 /* AppDelegate.swift in Sources */,
+				F3DB82D22A94526800CFE427 /* ContactListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F3DB82AA2A9451B700CFE427 /* PBXTargetDependency */ = {
+		F39668362A958AA200C9CE0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F3DB82912A9451B600CFE427 /* AppTelegram */;
-			targetProxy = F3DB82A92A9451B700CFE427 /* PBXContainerItemProxy */;
-		};
-		F3DB82B42A9451B700CFE427 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3DB82912A9451B600CFE427 /* AppTelegram */;
-			targetProxy = F3DB82B32A9451B700CFE427 /* PBXContainerItemProxy */;
+			targetProxy = F39668352A958AA200C9CE0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		F3DB829B2A9451B600CFE427 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3DB829C2A9451B600CFE427 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F3DB82A02A9451B700CFE427 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3DB82A12A9451B700CFE427 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
+		F39668382A958AA200C9CE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB5BB364M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hellen.heiny.AppTelegramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppTelegram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppTelegram";
+			};
+			name = Debug;
+		};
+		F39668392A958AA200C9CE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AB5BB364M4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hellen.heiny.AppTelegramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppTelegram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppTelegram";
+			};
+			name = Release;
+		};
 		F3DB82BA2A9451B700CFE427 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -438,11 +529,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AB5BB364M4;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppTelegram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,11 +557,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AB5BB364M4;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppTelegram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,85 +577,18 @@
 			};
 			name = Release;
 		};
-		F3DB82C02A9451B700CFE427 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AB5BB364M4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hellen.heiny.AppTelegramTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppTelegram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppTelegram";
-			};
-			name = Debug;
-		};
-		F3DB82C12A9451B700CFE427 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AB5BB364M4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hellen.heiny.AppTelegramTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppTelegram.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppTelegram";
-			};
-			name = Release;
-		};
-		F3DB82C32A9451B700CFE427 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AB5BB364M4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hellen.heiny.AppTelegramUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AppTelegram;
-			};
-			name = Debug;
-		};
-		F3DB82C42A9451B700CFE427 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AB5BB364M4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hellen.heiny.AppTelegramUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AppTelegram;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F39668372A958AA200C9CE0A /* Build configuration list for PBXNativeTarget "AppTelegramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39668382A958AA200C9CE0A /* Debug */,
+				F39668392A958AA200C9CE0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3DB828D2A9451B600CFE427 /* Build configuration list for PBXProject "AppTelegram" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -583,25 +607,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3DB82BF2A9451B700CFE427 /* Build configuration list for PBXNativeTarget "AppTelegramTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3DB82C02A9451B700CFE427 /* Debug */,
-				F3DB82C12A9451B700CFE427 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3DB82C22A9451B700CFE427 /* Build configuration list for PBXNativeTarget "AppTelegramUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3DB82C32A9451B700CFE427 /* Debug */,
-				F3DB82C42A9451B700CFE427 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F39668232A95755200C9CE0A /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F39668262A95757100C9CE0A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F39668242A95755200C9CE0A /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F39668232A95755200C9CE0A /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		F39668272A95757100C9CE0A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F39668262A95757100C9CE0A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F3DB828A2A9451B600CFE427 /* Project object */;
 }
