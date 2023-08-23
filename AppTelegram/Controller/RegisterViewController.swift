@@ -1,10 +1,11 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     
-    //var authenticationUserRegister: Auth?
+    var authenticationUserRegister: Auth?
     var registerUserView: RegisterView = RegisterView()
     
     override func loadView() {
@@ -15,7 +16,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         registerUserView.delegate = self
         registerUserView.configTextFieldDelegate(delegate: self)
-        //authenticationUserRegister = Auth.auth()
+        authenticationUserRegister = Auth.auth()
     }
     
     func alertRegisterSuccess() {
@@ -26,8 +27,6 @@ class RegisterViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             
         }
-        
-        
     }
 }
 
@@ -47,20 +46,18 @@ extension RegisterViewController: UITextFieldDelegate {
 extension RegisterViewController: RegisterUserViewDelegate {
     func tappedRegisterButton() {
         
-//        let register = registerUserView
-//
-//        authenticationUserRegister?.createUser(withEmail: register.getEmail(), password: register.getPassword(), completion: { (result, error) in
-//
-//            if error != nil {
-//                print("Error ao cadastrar")
-//
-//            } else {
-//                self.alertRegisterSuccess()
-//
+        let register = registerUserView
+        
+        authenticationUserRegister?.createUser(withEmail: register.getEmail(), password: register.getPassword(), completion: { (result, error) in
+            
+            if error != nil {
+                print("Error ao cadastrar")
                 
-//
-//            }
-//
-//        })
-  }
+            } else {
+                self.alertRegisterSuccess()
+                
+            }
+            
+        })
+    }
 }

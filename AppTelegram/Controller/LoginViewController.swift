@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
-   // var loginUserAuthentication: Auth?
+    var loginUserAuthentication: Auth?
     var loginView: LoginView = LoginView()
     
     override func loadView() {
@@ -20,7 +21,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         self.loginView.configTextFieldDelegate(delegate: self)
         loginView.delegate = self
-    //    loginUserAuthentication = Auth.auth()
+        loginUserAuthentication = Auth.auth()
     }
 }
 
@@ -41,22 +42,22 @@ extension LoginViewController: UITextFieldDelegate {
         return textField.resignFirstResponder()
     }
 }
-extension LoginViewController:LoginViewDelegate {
+extension LoginViewController: LoginViewDelegate {
     
     func actionLoginButton() {
-        //let login = loginView
+        let login = loginView
         
-//        loginUserAuthentication?.signIn(withEmail: login.getEmail() , password: login.getPassword(), completion: { (usuario, error) in
-//            
-//            if error != nil {
-//                print("Atenção dados incorretos, verifique e tente novamente!")
-//                
-//            } else {
-//                
-//                print("Usuario logado com sucesso!")
-//                
-//            }
-//        })
+        loginUserAuthentication?.signIn(withEmail: login.getEmail() , password: login.getPassword(), completion: { (usuario, error) in
+            
+            if error != nil {
+                print("Atenção dados incorretos, verifique e tente novamente!")
+                
+            } else {
+                
+                print("Usuario logado com sucesso!")
+                
+            }
+        })
         
         let contactListViewController = ContactListViewController()
         navigationController?.pushViewController(contactListViewController, animated: true)
