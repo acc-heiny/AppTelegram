@@ -40,6 +40,7 @@ extension ContactListViewDataSource: UICollectionViewDataSource {
 }
 
 extension ContactListViewDataSource: UICollectionViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let contactNames = contacts[indexPath.row]
         delegate?.contactSelected(name: contactNames.name)

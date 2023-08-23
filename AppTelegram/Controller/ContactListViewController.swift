@@ -35,6 +35,4 @@ extension ContactListViewController : ContactListViewDelegate {
     func nameOfContact(title: String) {
         
     }
-    
-    
 }
